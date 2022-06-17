@@ -3,11 +3,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const config = require('./config');
 
 const app = express();
 const router = express.Router();
 
-mongoose.connect('mongodb+srv://apiNode:mongo123db@cluster0.74guu.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect(config.connectionString);
 
 const Product = require('./models/product');
 const Customer = require('./models/customer');
