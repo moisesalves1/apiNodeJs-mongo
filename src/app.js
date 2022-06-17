@@ -10,7 +10,8 @@ const router = express.Router();
 mongoose.connect('mongodb+srv://apiNode:mongo123db@cluster0.74guu.mongodb.net/?retryWrites=true&w=majority');
 
 const Product = require('./models/product');
-const Costumer = require('./models/costumer')
+const Costumer = require('./models/costumer');
+const Order = require('./models/order');
 
 const indexRoute = require('./routes/index-route');
 const productRoute = require('./routes/product-route');
