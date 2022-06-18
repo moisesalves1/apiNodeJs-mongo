@@ -21,8 +21,6 @@ exports.post = async (req, res, next) => {
         const token = req.body.token || req.query.token || req.headers['x-access-token'];
         const data = await authService.decodeToken(token);
 
-
-
         await Repository.create({
             customer: data.id,
             number: Guid.raw().substring(),
