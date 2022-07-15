@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/server.js"
+    "start": "node ./bin/server.js",
+    "swagger-autogen": "node swagger.js"
   },
   "keywords": [],
   "author": "Moises Alves",
@@ -19,7 +20,9 @@
     "jsonwebtoken": "^7.4.0",
     "md5": "^2.3.0",
     "mongoose": "^6.3.8",
-    "sendgrid": "^2.0.0"
+    "sendgrid": "^2.0.0",
+    "swagger-autogen": "^2.21.5",
+    "swagger-ui-express": "^4.5.0"
   },
   "devDependencies": {
     "@types/sendgrid": "^4.3.0"
