@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node ./bin/server.js",
     "swagger-autogen": "node swagger.js"
-
   },
   "keywords": [],
   "author": "Moises Alves",
@@ -21,6 +20,7 @@
     "jsonwebtoken": "^7.4.0",
     "md5": "^2.3.0",
     "mongoose": "^6.3.8",
+    "redoc": "^2.0.0-rc.72",
     "sendgrid": "^2.0.0"
   },
   "devDependencies": {
